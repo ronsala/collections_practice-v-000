@@ -13,4 +13,7 @@ end
 def swap_elements(ary)
   second = ary[1]
   third = ary[2]
+  ary[1] = third
+  ary[2] = second
+  ary
 end
