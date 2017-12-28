@@ -17,3 +17,15 @@ def swap_elements(ary)
   ary[2] = second
   ary
 end
+
+def reverse_array(ary)
+  ary.reverse
+end
+
+def kesha_maker(ary)
+  ary.each do
+    
+  end
+  split_ary = ary.split(//)
+  split_ary[]
+end
