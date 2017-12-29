@@ -23,9 +23,17 @@ def reverse_array(ary)
 end
 
 def kesha_maker(ary)
-  ary.each do
-    
+  i = 0
+  ary.each do |str|
+    split_str = str.split(//)
+    split_str[2] = "$"
+    ary[i] = split_str.join
+    i += 1
   end
-  split_ary = ary.split(//)
-  split_ary[]
+end
+
+def find_a(ary)
+  ary.select { |str| }
+
+  end
 end
