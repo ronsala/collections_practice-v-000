@@ -55,8 +55,8 @@ def add_s(ary)
       if i != 1
         split_str = str.split(//)
         split_str << "s"
+        s_ary[i] = split_str.join
       end
-      s_ary[i] = split_str.join
       i += 1
     end
   s_ary
