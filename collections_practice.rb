@@ -52,11 +52,13 @@ def add_s(ary)
   s_ary = []
   i = 0
   ary.each do |str|
-    if i != 1
-    split_str = str.split(//)
-    split_str[2] = "$"
-    ary[i] = split_str.join
-    i += 1
-  end
+      if i != 1
+        split_str = str.split(//)
+        split_str << "s"
+        s_ary[i] = split_str.join
+      end
+      i += 1
+    end
+    s_ary[1] = ary[1]
   s_ary
 end
