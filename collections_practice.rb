@@ -33,7 +33,30 @@ def kesha_maker(ary)
 end
 
 def find_a(ary)
-  ary.select { |str| }
-
+  a_ary = []
+  ary.each do |str|
+    split_str = str.split(//)
+    if split_str[0] == "a"
+      a_str = split_str.join
+      a_ary << a_str
+    end
   end
+  a_ary
+end
+
+def sum_array(ary)
+  ary.inject { |sum, n| sum + n }
+end
+
+def add_s(ary)
+  s_ary = []
+  i = 0
+  ary.each do |str|
+    if i != 1
+    split_str = str.split(//)
+    split_str[2] = "$"
+    ary[i] = split_str.join
+    i += 1
+  end
+  s_ary
 end
